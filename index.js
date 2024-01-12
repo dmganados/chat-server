@@ -49,8 +49,8 @@
         cors: {
             origin: "http://localhost:3000",
             methods: ["GET", "PUT", "POST", "DELETE"],
-            // headers: "Content-Type, Authorization",
-            // credentials: true
+            headers: "Content-Type, Authorization",
+            credentials: true
         },
     });
     

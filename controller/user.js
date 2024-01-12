@@ -106,7 +106,7 @@ module.exports.deleteProfile = (id) => {
         if (userId === null) {
             return 'Account not found'
         } else {
-            return userId.remove().then((profileRemoved, err) => {
+            return userId.deleteOne().then((profileRemoved, err) => {
                 if (err) {
                     return 'Failed to delete'
                 } else {
